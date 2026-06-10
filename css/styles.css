@@ -1,0 +1,68 @@
+p {
+    color:blue;
+    font-size: 20px;
+}
+#title {
+    color: red;
+    font-size: 30px;
+}
+.nav ul{
+    background-color: yellow;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+body {
+    font-family: "Inter", sans-serif;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+    p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+:root {
+  --primary-color: hsl(25, 100%, 50%);   /* naranja básquet */
+  --secondary-color: hsl(220, 70%, 40%); /* azul tecnología */
+  --bg-light: hsl(0, 0%, 95%);
+}
+
+body {
+  /*  base al body */
+  background-color: var(--bg-light);
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  /* un fondo con un gradiente lineal que vaya de primary a secondary */
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 3rem;
+}
+
+section {
+  /*  color con transparencia para un fondo suave */
+  background-color: hsla(220, 80%, 50%, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.hero {
+  background-image: url("../assets/entrenador2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
