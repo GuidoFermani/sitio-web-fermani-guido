@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: hsl(25, 100%, 50%);
+  --secondary-color: hsl(220, 70%, 40%);
+  --bg-light: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #00ff73;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.title {
+  color: #a6ff00;
+  font-size: 30px;
+}
+
+.nav ul {
+  background-color: #ffff00;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+a {
+  color: #4b1ca3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #ffffff;
+  padding: 3rem;
+}
+
+section {
+  background-color: hsla(220, 80%, 50%, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.hero {
+  background-image: url("../assets/entrenador2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  height: 100vh;
+  display: flex;
+}
