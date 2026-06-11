@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --primary-color: hsl(25, 100%, 50%);
   --secondary-color: hsl(220, 70%, 40%);
@@ -24,6 +29,7 @@ p {
 
 .nav ul {
   background-color: #ffff00;
+  padding: 15px;
 }
 
 h1 {
@@ -32,6 +38,8 @@ h1 {
 }
 
 a {
+  display: inline-block;
+  padding: 10px 20px;
   color: #4b1ca3;
   text-decoration: none;
 }
@@ -48,11 +56,13 @@ header {
   );
   color: #ffffff;
   padding: 3rem;
+  border-bottom: 2px solid #000000;
 }
 
 section {
   background-color: hsla(220, 80%, 50%, 0.1);
   margin: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -65,4 +75,11 @@ section {
   min-height: 400px;
   height: 100vh;
   display: flex;
+}
+article {
+    background-color: #28378f;
+    border: 1px solid #e06d0f;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
