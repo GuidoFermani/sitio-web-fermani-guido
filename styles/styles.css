@@ -29,13 +29,14 @@ p {
 
 .nav ul {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: #ffff00;
-  padding: 15px;
-  gap: 1rem;
+  padding: 10px 15px;
+  gap: 1.5rem;
 }
 /* =========================
    MENU FLEXBOX
@@ -50,10 +51,7 @@ p {
     padding: 0;
 }
 
-.nav-item {
-    flex: 1;
-    text-align: center;
-}
+
 
 h1 {
   font-size: 36px;
@@ -94,7 +92,7 @@ section {
 }
 
 .hero {
-  background-image: url("../assets/entrenador2.jpeg");
+  background-image: url("../assets/basquet.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -114,6 +112,7 @@ article {
     font-weight: bold;
     color: #0615ec;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     margin-bottom: 20px;
 }
 /* =========================
    CONTENEDOR DE PROYECTOS
