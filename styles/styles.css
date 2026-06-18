@@ -136,3 +136,52 @@ article {
     padding: 20px;
     text-align: center;
 }
+/* =========================
+   GRID PRINCIPAL
+========================= */
+
+.site-wrapper {
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    min-height: 100vh;
+}
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+aside {
+    grid-area: sidebar;
+
+    background-color: #f4f4f4;
+
+    padding: 20px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333333;
+}
