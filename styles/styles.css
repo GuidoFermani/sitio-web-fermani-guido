@@ -258,3 +258,22 @@ h1 {
       "featured project3 project3";
   }
 }
+.header-grid {
+    grid-area: header;
+}
+
+.featured {
+    grid-area: featured;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
