@@ -213,3 +213,65 @@ img {
     height: auto;
     display: block;
 }
+/* =========================
+   TIPOGRAFÍA FLUIDA
+========================= */
+:root {
+  --title-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Aplicamos la variable a los títulos */
+.logo,
+h1 {
+  font-size: var(--title-size);
+}
+
+/* =========================
+   GRID RESPONSIVE - MOBILE FIRST
+========================= */
+.portfolio-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  /* Mobile: una sola columna */
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "header"
+    "featured"
+    "project1"
+    "project2"
+    "project3"
+    "footer";
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "header"
+      "featured"
+      "project1"
+      "project2"
+      "project3"
+      "footer";
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+      "header header header"
+      "featured project1 project2"
+      "project3 footer footer";
+  }
+}
