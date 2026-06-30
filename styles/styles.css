@@ -143,7 +143,7 @@ article {
 .site-wrapper {
     display: grid;
 
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: minmax(180px, 20%) 1fr;
 
     grid-template-rows: auto 1fr auto;
 
@@ -188,13 +188,16 @@ aside a {
 /* GRID DE PROYECTOS */
 
 .portfolio-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-
-    grid-template-rows: 1fr 3fr;
-
-    gap: 20px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "featured"
+    "project1"
+    "project2"
+    "project3"
+    "footer";
 }
 
 .portfolio-item {
@@ -226,24 +229,6 @@ h1 {
   font-size: var(--title-size);
 }
 
-/* =========================
-   GRID RESPONSIVE - MOBILE FIRST
-========================= */
-.portfolio-grid {
-  display: grid;
-  gap: 1.5rem;
-
-  /* Mobile: una sola columna */
-  grid-template-columns: 1fr;
-
-  grid-template-areas:
-    "header"
-    "featured"
-    "project1"
-    "project2"
-    "project3"
-    "footer";
-}
 
 /* =========================
    TABLET
@@ -255,10 +240,8 @@ h1 {
     grid-template-areas:
       "header"
       "featured"
-      "project1"
-      "project2"
-      "project3"
-      "footer";
+      "project1 project2"
+      "project3 project3";
   }
 }
 
@@ -272,6 +255,6 @@ h1 {
     grid-template-areas:
       "header header header"
       "featured project1 project2"
-      "project3 footer footer";
+      "featured project3 project3";
   }
 }
