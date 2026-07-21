@@ -1,5 +1,9 @@
-@use "variables";
-@use "mixins";
-@use "base";
-@use "layout";
-@use "components";
+@use "utilities/variables";
+@use "utilities/mixins";
+
+@use "base/base";
+@use "base/tipografias";
+
+@use "layout/layout";
+
+@use "components/components";

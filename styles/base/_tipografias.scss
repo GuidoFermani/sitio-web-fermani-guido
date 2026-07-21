@@ -1,17 +1,10 @@
-@use "variables" as *;
+@use "../utilities/variables" as *;
 
 /* =========================
-   RESET
+   TIPOGRAFÍA
 ========================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: $bg-light;
     font-family: "Inter", sans-serif;
 }
 
@@ -25,15 +18,15 @@ h1 {
     font-size: $title-size;
 }
 
+.title {
+    color: $title-color;
+    font-size: 30px;
+}
+
 p {
     color: $text-color;
     font-size: 1rem;
     font-weight: 400;
-}
-
-.title {
-    color: $title-color;
-    font-size: 30px;
 }
 
 a {
@@ -45,10 +38,4 @@ a {
     &:hover {
         color: $hover-color;
     }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
