@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-light;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.logo,
+h1 {
+    font-size: $title-size;
+}
+
+p {
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.title {
+    color: $title-color;
+    font-size: 30px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
